@@ -1,0 +1,1 @@
+Blog app in which you can write and POST.  Page will update with new blog posts added to the bottom of the page upon each new post, but which will reset when the server is restarted.
