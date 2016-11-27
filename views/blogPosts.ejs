@@ -2,15 +2,40 @@
 <html>
 	<head>
 		<title>Title TK</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	</head>
 	<body>
-		<h1>Bloggity.<h1>
-		<div class = "blogPosts">
-			<% for (var i in blogPosts) { %>
-				<h2><%= blogPosts[i].title %></h2>
-				<h3><%= blogPosts[i].author %></h3>
-				<p><%= blogPosts[i].body %></p>
-			<% } %>
+		<div class="header">
+			<h1>title tk</h1>
 		</div>
+		<div class = "form">
+			<form action="/create" method="POST">
+			<div>
+				<h3>Name yo' blog:</h3>
+				<input type="text" name="title"/>
+			</div>
+			<div>
+				<h3>Name yo'self:</h3>
+				<input type="text" name="author">
+			</div>
+			<div>
+				<h3>Express yo'self:</h3>
+				<textarea name="body"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Post"/>
+			</div>
+		</form>
+		</div>		
+		<div class="subject">
+			<h1>Blog Posts<h1>
+		</div>
+		<% for (var i in blogPosts) { %>
+			<div class="content">
+				<h2>Title: <%= blogPosts[i].title %></h2>
+				<h3>Author: <%= blogPosts[i].author %></h3>
+				<p><%= blogPosts[i].body %></p>
+			</div>
+		<% } %>
 	</body>
 </html>
