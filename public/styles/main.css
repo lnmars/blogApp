@@ -1,4 +1,42 @@
 body {
-	background-color: black;
+	background-image: url(images/smallHex.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	color: white;
+}
+
+div {
+	border-radius: 25px;
+}
+
+div.header {
+	background-color: black;
+	border: 10px solid green;
+	margin: 0 auto;
+	width: 50%;
+}
+
+div.header h1 {
+	font-size: 48pt;
+	padding: 50px;
+	margin: 10px auto;
+}
+
+div.form-group {
+	background-color: black;
+	border: 10px solid green;
+	width: 90%;
+	margin: 25px auto;
+	padding: 25px;
+}
+
+div.blog-posts {
+	color: black;
+	background-color: white;
+	border: 10px solid green;
+	width: 90%;
+	margin: 0 auto;
+	padding: 25px;
 }

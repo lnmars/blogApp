@@ -5,9 +5,12 @@
 	</head>
 	<body>
 		<h1>Bloggity.<h1>
-			<div class = "blog-posts">
-				<% for (var i in blogPosts) { %>
-					<h2></h2>
-				<% } %>
+		<div class = "blogPosts">
+			<% for (var i in blogPosts) { %>
+				<h2><%= blogPosts[i].title %></h2>
+				<h3><%= blogPosts[i].author %></h3>
+				<p><%= blogPosts[i].body %></p>
+			<% } %>
+		</div>
 	</body>
 </html>
